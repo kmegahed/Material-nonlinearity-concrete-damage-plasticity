@@ -440,7 +440,7 @@ C
             call khaigh(sg_minus,sv,ro,th,dinv_dsig_pr);
             call kequ_e(sv,ro,th,equ_e_minus)
             iunload_flag=0;pmin_equ_e=eps_old;p=equ_e_plus;
-            pm=equ_e_minus;o=eps_old
+            pm=equ_e_minus;o=eps_old;pn=equ_e_new
             if ((p<o.and.pm<pn).and.
      $       (abs(p-o)>gtol/10.and.abs(pm-pn)>gtol/10)) then
                   iunload_flag=1
