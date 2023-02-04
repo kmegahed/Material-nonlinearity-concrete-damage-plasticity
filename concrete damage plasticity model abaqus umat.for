@@ -171,7 +171,7 @@ C
       call khaigh(sg,sv_tr1,ro_tr1,theta_tr1,dinv_dsig_pr)
       call kvec_to_tens(sg,sig_ten)
       call kjacobi_eigenvalue(3,sig_ten,dir,sg_p)
-      !descend ord check sg-dir*sg_p*dir'=00
+      
       pkp=pk;tkp1=pk;sv=sv_tr1;ro=ro_tr1;
       unkn1(1)=sv_tr1;unkn1(2)=ro_tr1;unkn1(3)=tkp1;unkn1(4)=0.;
       call kff(sv,ro,theta_tr1,tkp1,resd(4));
